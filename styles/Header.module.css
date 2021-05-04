@@ -1,0 +1,50 @@
+.header {
+  height: 16em;
+  width: 100%;
+  background-color: #252322;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.ul {
+  display: inline-block;
+  /* padding: 1em; */
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.ulX {
+  border: hidden;
+}
+
+.icon {
+  width: 150px;
+  height: 100px;
+}
+
+@media (max-width: 1250px) {
+  .ul {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+  .ul {
+    padding: 1em;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+}
