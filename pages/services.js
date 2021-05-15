@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 const Services = () => {
   return (
     <>
+      <Head>
+        <title>Services</title>
+      </Head>
       <motion.div
         className={styles.service}
         drag
@@ -13,7 +17,7 @@ const Services = () => {
         whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgb(255,255,255)" }}
         whileTap={{ cursor: "grabbing" }}
       >
-        <h4>Individualni Trening</h4>
+        <h4 className={styles.serviceNaslov}>Individualni Trening</h4>
       </motion.div>
 
       <motion.div
@@ -25,7 +29,7 @@ const Services = () => {
         whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgb(255,255,255)" }}
         whileTap={{ cursor: "grabbing" }}
       >
-        <h4>Poluindividualni Trening</h4>
+        <h4 className={styles.serviceNaslov}>Poluindividualni Trening</h4>
       </motion.div>
 
       <motion.div
@@ -37,7 +41,7 @@ const Services = () => {
         whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgb(255,255,255)" }}
         whileTap={{ cursor: "grabbing" }}
       >
-        <h4>Mini Grupe</h4>
+        <h4 className={styles.serviceNaslov}>Mini Grupe</h4>
       </motion.div>
     </>
   );

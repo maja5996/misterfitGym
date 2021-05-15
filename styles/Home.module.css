@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
 
 .content {
   min-height: 100vh;
@@ -9,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 .fit {
@@ -20,8 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9em;
-  font-family: "Poppins", sans-serif;
+  font-size: em;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 .instructors {
@@ -30,7 +31,7 @@
 
 .flipcard {
   background-color: transparent;
-  margin: 10em;
+  margin: 11em;
   width: 400px;
   height: 400px;
   perspective: 1000px;
@@ -45,7 +46,7 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(56, 55, 55, 0.2);
 }
 
 .flipcard:hover .flipcardinner {
@@ -132,9 +133,36 @@
   .homeContainer {
     font-size: 7em;
   }
+
+  .centerFlipCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flipcard {
+    background-color: transparent;
+
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flipcardinner {
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(56, 55, 55, 0.2);
+  }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 600px) {
   .content {
     margin: 0 auto;
     display: flex;
@@ -143,6 +171,18 @@
   }
   .homeContainer {
     font-size: 3em;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: "center";
+    /* margin: 5px; */
+  }
+
+  .serviceNaslov {
+    font-size: 1em;
   }
 
   .ifnoli {
@@ -163,29 +203,61 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
   .content {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     background-color: #f98e0a;
   }
 
   .homeContainer {
-    font-size: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3px;
   }
 
   .service {
-    font-size: 1.7em;
-    margin: 2px;
+    margin: 3px 5px;
     font-family: "Poppins", sans-serif;
     cursor: "grab";
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: "center";
+  }
+  .serviceNaslov {
+    padding: 5px;
+    font-size: 35px;
+    text-align: center;
   }
 
+  .centerFlipCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flipcard {
+    background-color: transparent;
+
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flipcardinner {
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(56, 55, 55, 0.2);
+  }
   .info {
     margin: 0 auto;
     display: flex;
@@ -195,6 +267,13 @@
   }
 
   .h4Info {
-    font-size: 1.7em;
+    font-size: 2em;
+    margin: 15px;
+    padding: 35px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .ifnoli {
+    font-size: 25px;
   }
 }

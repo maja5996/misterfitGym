@@ -23,9 +23,13 @@
 }
 
 @media (max-width: 1250px) {
+  .header {
+    width: 100%;
+  }
+
   .ul {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .icon {
@@ -34,7 +38,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 600px) {
   .header {
     width: 100%;
   }
@@ -43,11 +47,10 @@
   }
 
   .icon {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
   }
 }
-
 @media (max-width: 360px) {
   .header {
     width: 100%;
@@ -61,3 +64,17 @@
     height: 50px;
   }
 }
+
+/* @media (min-width: 360px) and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+  .ul {
+    padding: 1em;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+} */

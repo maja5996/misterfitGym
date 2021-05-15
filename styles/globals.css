@@ -1,6 +1,7 @@
 html,
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: scroll;
   padding: 0;
   margin: 0;
 }
@@ -15,4 +16,16 @@ a {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media (max-width: 360px) {
+  html {
+    display: flex;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  html {
+    display: flex;
+  }
 }
