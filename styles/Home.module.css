@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: em;
+  color: #ef5b03;
   font-family: "Balsamiq Sans", cursive;
 }
 
@@ -203,7 +203,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .content {
     /* margin: 0 auto; */
     display: flex;
@@ -216,6 +216,14 @@
     align-items: center;
     justify-content: center;
     font-size: 3px;
+  }
+
+  .fit {
+    font-size: 30px;
+  }
+  .mis {
+    font-size: 70px;
+    color: #ef5b03;
   }
 
   .service {
@@ -277,3 +285,261 @@
     font-size: 25px;
   }
 }
+
+/* 
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+.content {
+  min-height: 100vh;
+
+  background-color: #f98e0a;
+}
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.fit {
+  color: #ef5b03;
+}
+
+.mis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.instructors {
+  display: flex;
+}
+
+.flipcard {
+  background-color: transparent;
+  margin: 11em;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flipcardinner {
+  position: relative;
+  margin: 1em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(56, 55, 55, 0.2);
+}
+
+.flipcard:hover .flipcardinner {
+  transform: rotateY(180deg);
+}
+
+.flipcardfrontStefan,
+.flipcardfrontMarko,
+.flipcardback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipcardfrontMarko {
+  background-color: #bbb;
+  color: black;
+  background-image: url(https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flipcardfrontStefan {
+  background-color: #bbb;
+  color: black;
+  background-image: url(https://images.unsplash.com/photo-1516258454449-64fed1caa732?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flipcardback {
+  background-color: #e58b30;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+}
+
+.service {
+  font-size: 3em;
+  margin: 7px;
+  font-family: "Poppins", sans-serif;
+  cursor: "grab";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: "center";
+}
+
+.info {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.h4Info {
+  font-size: 2em;
+  margin: 10px;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ifnoli {
+  list-style: none;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f98e0a;
+  }
+  .homeContainer {
+    font-size: 3em;
+  }
+
+  .fit {
+    color: #ef5b03;
+    font-size: 3em;
+  }
+
+  .mis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: "center";
+    
+  }
+
+  .serviceNaslov {
+    font-size: 1em;
+  }
+
+  .ifnoli {
+    font-size: 15px;
+  }
+
+  .iconInfo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .centerFlipCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .content {
+   
+    flex-direction: column;
+    background-color: #f98e0a;
+  }
+
+  .homeContainer {
+    display: flex;
+  }
+
+  .service {
+    margin: 3px 5px;
+    font-family: "Poppins", sans-serif;
+    cursor: "grab";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviceNaslov {
+    padding: 5px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .centerFlipCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flipcard {
+    background-color: transparent;
+
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flipcardinner {
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(56, 55, 55, 0.2);
+  }
+  .info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h4Info {
+    font-size: 2em;
+    margin: 15px;
+    padding: 35px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .ifnoli {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+} */
